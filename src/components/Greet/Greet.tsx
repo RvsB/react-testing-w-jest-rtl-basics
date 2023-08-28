@@ -1,7 +1,9 @@
-type Props = {}
-const Greet = (props: Props) => {
+type Props = {
+  name?: string;
+}
+const Greet = ({name}: Props) => {
   return (
-    <div>Hello</div>
+    <div>Hello {name} </div>
   )
 }
 export default Greet
