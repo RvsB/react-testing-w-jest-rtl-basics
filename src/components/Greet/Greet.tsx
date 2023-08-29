@@ -1,9 +1,6 @@
-type Props = {
-  name?: string;
-}
-const Greet = ({name}: Props) => {
-  return (
-    <div>Hello {name} </div>
-  )
-}
-export default Greet
+import { GreetProps } from "./Greet.interface";
+
+const Greet = ({ name }: GreetProps) => {
+  return <div>Hello {name ? name : "Guest"} </div>;
+};
+export default Greet;
