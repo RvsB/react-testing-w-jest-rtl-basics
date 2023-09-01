@@ -5,6 +5,7 @@ import { Skills } from "./components/Skills/Skills";
 import { Counter } from "./components/Counter/Counter";
 import { AppProviders } from "./providers/AppProviders";
 import { MuiMode } from "./components/MUI/MuiMode";
+import { CounterTwo } from "./components/CounterTwo/CounterTwo";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Application />
         <Skills skills={["HTML", "CSS", "Javascript"]} />
         <Counter />
-        {/* <CounterTwo count={1} /> */}
+        <CounterTwo count={1} />
         {/* <Users /> */}
         <MuiMode />
       </div>
